@@ -28,19 +28,37 @@ public class RobotInSpace extends KeyboardAdapter {
 	 * and rob.setAngle(angle) to change the direction of your Robot. //Do not add
 	 * code here - go to step 2
 	 */
-
+	
 	private void moveRobot(int keyPressed) {
 		// 2. Print out the keyPressed variable and write down the numbers for
 		// each arrow key
-		
+		// up is 38
+		// down is 40
+		// right is 39
+		// left is 37
+		System.out.println(keyPressed);
+		//rob.move(distance);
+		//rob.setAngle(angle);
 		// 3. If the up arrow is pressed, move the Robot up the screen.
-		
+		if (keyPressed == 38) {
+			rob.setAngle(0);
+			rob.move(20);
+		}
 		// 4. If the down arrow is pressed, move the Robot down.
-		
+		if (keyPressed == 39) {
+			rob.setAngle(90);
+			rob.move(20);
+		}
 		// 5. If the left arrow is pressed, make the Robot go left.
-		
+		if (keyPressed == 40) {
+			rob.setAngle(180);
+			rob.move(20);
+		}
 		// 6. If right is pressed, move the Robot right.
-		
+		if (keyPressed == 37) {
+			rob.setAngle(270);
+			rob.move(20);
+		}
 		// 7. Run your program and move the Robot to R2-D2 for a surprise!
 		
 	}

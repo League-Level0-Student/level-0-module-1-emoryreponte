@@ -17,12 +17,12 @@ import javax.swing.JOptionPane;
 public class SecretMessageBox {
 
 	// 0. Make a main method and put steps 1-5 inside it
-	public static void main(string[] args) {
-		String Password = "06161228819";
+	public static void main(String[] args) {
+		String Password = "01100110_01110101_01100011_01101011";
 		String message = JOptionPane.showInputDialog("Give me a secret message for a friend");
 		String answer = JOptionPane.showInputDialog("Give me the secret password your friend made");
-		if (answer.equals("Robert_Kim")) {
-			JOptionPane.showMessageDialog(null, Password);
+		if (answer.equals(Password)) {
+			JOptionPane.showMessageDialog(null, "correct");
 		}
 		else {
 			JOptionPane.showMessageDialog(null, "Wrong");
